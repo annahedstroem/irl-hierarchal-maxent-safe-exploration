@@ -1,0 +1,13 @@
+DONE:
+
+1. Expert Q-learning works for single-goal tasks.
+2. Made a plotter for value-function learning.
+
+TODO:
+
+1. Make the expert heirarchical: Make 2 Q-learning modules. Activate one when the agent doesn't have a flag and the other when agent has the flag.
+2. Make the expert HRL: Make the expert options-like. Then there will be a higher-level policy that switches (then us manually switching). May require look at some reference options implementation.
+3. Implement MaxEnt IRL:
+   3.1 Store expert trajectories tau={s1,a1,...,sT,aT}
+   3.2 Create new class "inverse_agent" that can see only tau.
+   3.3 Implement MaxEnt model (ref imp http://178.79.149.207/posts/maxent.html)
